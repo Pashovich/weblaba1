@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "PassViewData";
+}
+@{
+    // Since Address isn't a string, it requires a cast.
+    var Model = ViewData["data"] as Results;
+}
+
+<h1>PassViewData</h1>
+<h4>Rand value : @Model.first </h4>
+<h4>Rand value : @Model.second </h4>
+<h4>Add :</h4>
+<div>@Model.first + @Model.second = @Model.add</div>
+<h4>Sub :</h4>
+<div>@Model.first - @Model.second = @Model.sub</div>
+<h4>Mult :</h4>
+<div>@Model.first * @Model.second = @Model.mult</div>
+<h4>Div :</h4>
+<div>@Model.first / @Model.second = @Model.div</div>
