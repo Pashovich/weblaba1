@@ -110,3 +110,4 @@ C:\Users\USER\source\repos\laba1\laba1\obj\Debug\netcoreapp3.1\Razor\Views\Opera
 C:\Users\USER\source\repos\laba1\laba1\obj\Debug\netcoreapp3.1\Razor\Views\Operations\PassModel.cshtml.g.cs
 C:\Users\USER\source\repos\laba1\laba1\obj\Debug\netcoreapp3.1\Razor\Views\Operations\PassViewData.cshtml.g.cs
 C:\Users\USER\source\repos\laba1\laba1\obj\Debug\netcoreapp3.1\Razor\Views\Operations\PassViewBag.cshtml.g.cs
+C:\Users\USER\source\repos\laba1\laba1\obj\Debug\netcoreapp3.1\Razor\Views\Operations\PassInjection.cshtml.g.cs

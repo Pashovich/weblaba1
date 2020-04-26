@@ -34,8 +34,7 @@ namespace laba1.Controllers
         }
         public ViewResult PassModel()
         {
-            Results viewModel = initResult();
-            return View(viewModel);
+            return View(initResult());
         }
         public ViewResult PassViewData()
         {
@@ -46,6 +45,10 @@ namespace laba1.Controllers
         {
             ViewBag.data = initResult();
             return View();
+        }
+        public ViewResult PassInjection()
+        {
+            return View(initResult());
         }
     }
 }
