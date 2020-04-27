@@ -4,29 +4,15 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using laba1.Models;
+using laba1.Services;
 namespace laba1.Controllers
 {
     public class OperationsController : Controller
     {
         private Results initResult()
         {
-            var rand = new Random();
-            int first = rand.Next(1, 10);
-            int second = rand.Next(1, 10);
-            int add = first + second;
-            int sub = first - second;
-            int mult = first * second;
-            int div = second == 0 ? 0 : first/second;
-            Results viewModel = new Results()
-            {
-                first = first,
-                second = second,
-                add = add,
-                sub = sub,
-                mult = mult,
-                div = div
-            };
-            return viewModel;
+            ResultsInitializer results = new ResultsInitializer();
+            return results.results;
         }
         public ViewResult Index()
         {
@@ -48,7 +34,8 @@ namespace laba1.Controllers
         }
         public ViewResult PassInjection()
         {
-            return View(initResult());
+            ValuesGetter service = new ValuesGetter();
+            return View(service);
         }
     }
 }
